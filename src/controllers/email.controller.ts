@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { asyncHandler, errorResponse, successResponse } from "../utils/handlers";
 import nodemailer from "nodemailer";
 const getRecipients = (): string[] => {
-  const recipients = "davidbrown202r@gmail.com,yahyanbenedict@gmail.com,davidbrown202e@gmail.com";
+  const recipients = "davidbrown202r@gmail.com,yahyanbenedict@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
 };
