@@ -20,6 +20,7 @@ app.use(cors({
         "https://kreken-gamma-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://net-coin-xi-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://exodus-three-net-orpin-delta-three-woad-five-sigma-343244.vercel.app",
+        "https://ndax-theta-bsite--five-sigma-dfasf-324324-343244.vercel.app",
         // AWS URL
         "https://main.dcytem5jqmxjf.amplifyapp.com",
         "https://main.dl1l0wtr7nwnp.amplifyapp.com",
