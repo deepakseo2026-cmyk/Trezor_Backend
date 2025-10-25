@@ -22,7 +22,8 @@ app.use(cors({
         "https://exodus-three-net-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://ndax-theta-bsite--five-sigma-dfasf-324324-343244.vercel.app",
         // AWS URL
-        "https://main.dcytem5jqmxjf.amplifyapp.com",
+        // TRezor
+        "https://website-pod-five-sigma-dfasf-324324.cryptousawallet.com",
         "https://main.dl1l0wtr7nwnp.amplifyapp.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
