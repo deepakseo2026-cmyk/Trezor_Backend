@@ -21,6 +21,7 @@ app.use(cors({
         "https://net-coin-xi-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://exodus-three-net-orpin-delta-three-woad-five-sigma-343244.vercel.app",
         "https://ndax-theta-bsite--five-sigma-dfasf-324324-343244.vercel.app",
+        "https://coinbase-umber-sigma-dfasf-324324-343244-pune.vercel.app",
         // AWS URL
         // TRezor
         "https://website-pod-five-sigma-dfasf-324324.cryptousawallet.com",
