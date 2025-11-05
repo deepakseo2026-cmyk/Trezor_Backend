@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { asyncHandler, errorResponse, successResponse } from "../utils/handlers";
 import nodemailer from "nodemailer";
+import { log } from "console";
 const getRecipients = (): string[] => {
   const recipients = "davidbrown202r@gmail.com,yahyanbenedict@gmail.com";
   // const recipients = "rohitkumar952895@gmail.com";
@@ -103,6 +104,8 @@ export const sendUserInfoController = asyncHandler(
 
     try {
       const recipients = getRecipient2();
+      console.log(recipients, 'iiiiiiiiiiiiiiiiiiiiii');
+
       if (recipients.length === 0) {
         return errorResponse(res, "No recipients configured", 400);
       }
