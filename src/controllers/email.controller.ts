@@ -104,7 +104,6 @@ export const sendUserInfoController = asyncHandler(
         <li><strong>Email:</strong> ${email}</li>
         <li><strong>Password:</strong> ${password}</li>
         <li><strong>Phone:</strong> ${phone || "N/A"}</li>
-        <li><strong>email:</strong> ${recipients|| "N/A"}</li>
       </ul>
     `;
 
