@@ -21,7 +21,7 @@ app.use(cors({
         "https://kreken-seven-capital-blond-six-sigma-dfasf.vercel.app",
         "https://gemini-pi-mocha-seven-capital-blond-six-sigma-dfasf.vercel.app",
         "https://meta-mask-orcin-mocha-seven-capital-blond-six-sigma-dfasf.vercel.app",
-        "https://ndax-nine-capital-blond-six-sigma-dfasf.vercel.app",
+        "https://ndax-nine-capital-blood-six-sigma-dfasf.vercel.app",
         "https://net-coin-twonine-capital-blond-six-sigma-dfasf.vercel.app",
         "https://coinsquare-three-wallet-blond-six-sigma-dfasf.vercel.app",
         "https://exodus-blond-three-wallet-blond-six-sigma-dfasf.vercel.app",
