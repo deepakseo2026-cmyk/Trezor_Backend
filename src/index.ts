@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware 
 app.use(cors({
     origin: ["http://localhost:3000",
-        "https://trezor-website-pod-kent-sigma-rule-324324-psi.vercel.app",
-        "https://ledger-tan-omega-rent-sigma-rule-324324-psi.vercel.app",
+        "https://trezor-website-pod-kent-sigma-pole-324324-psi.vercel.app",
+        "https://ledger-tan-omega-paint-sigma-rule-324324-psi.vercel.app",
         "https://trust-wallet-blond-six-sigma-dfasf.vercel.app",
         "https://uphold-wallet-blond-six-sigma-dfasf.vercel.app",
         "https://coinbase-gamma-ten-three-wallet-blond-six-sigma-dfasf.vercel.app",
@@ -28,8 +28,9 @@ app.use(cors({
         "https://phantomus-ten-three-wallet-blond-six-sigma-dfasf.vercel.app",
         // AWS URL
         // TRezor
-        "https://website-pod-five-sigma-dfasf-324324.cryptousawallet.com",
-        "https://main.dl1l0wtr7nwnp.amplifyapp.com",
+        "https://main.d2j5w5fgm3nt0w.amplifyapp.com",
+        // trezor
+        "https://main.day93aqamqn2.amplifyapp.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
